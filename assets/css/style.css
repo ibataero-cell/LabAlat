@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root { --primary-color: #673ab7; --bg-light: #f4f7f6; --white: #ffffff; --text: #495057; --border: #e9ecef; }
+body { font-family: 'Poppins', sans-serif; background-color: var(--bg-light); color: var(--text); }
+
+/* Navbar Gradient */
+.main-navbar-gradient { background: linear-gradient(90deg, #673ab7 0%, #00d4ff 100%); z-index: 1030; }
+.navbar-brand, .nav-link { color: rgba(255,255,255,0.9) !important; }
+.nav-link:hover, .nav-link.active { color: #fff !important; font-weight: 700; }
+
+/* Login */
+.login-container { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #673ab7, #00d4ff); position: relative; }
+#particles-js { position: absolute; width: 100%; height: 100%; }
+.login-card { z-index: 2; border: 0; }
+
+/* Cards & Content */
+.card { border: 0; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
+.stat-card { border-left: 5px solid var(--primary-color); }
+.stat-number { font-size: 2.5rem; font-weight: 700; }
+
+/* Tabel Modern FIX */
+.table-modern { background: var(--white); border-radius: 10px; border-collapse: collapse; }
+.table-modern thead { background: #f8f9fa; }
+.table-modern th, .table-modern td { padding: 1rem; border-bottom: 1px solid var(--border); vertical-align: middle; }
+.table-modern tr:hover { background-color: #ede7f6; /* Tidak ada transform agar z-index aman */ }
+.btn-group { position: static; } 
+.dropdown-menu { z-index: 9999 !important; }
+
+/* Notifikasi */
+.notification-dropdown { width: 320px; max-height: 400px; overflow-y: auto; }
+.notif-item { display: flex; padding: 10px; border-bottom: 1px solid #eee; white-space: normal; }
+/* ... CSS lama ... */
+
+/* Styling Notifikasi */
+.notification-dropdown {
+    width: 300px;
+    max-height: 350px;
+    overflow-y: auto;
+    border: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+.notification-dropdown .dropdown-item {
+    white-space: normal; /* Agar teks panjang turun ke bawah */
+    padding: 10px 15px;
+}
